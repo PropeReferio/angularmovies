@@ -1,0 +1,19 @@
+<h1>See your movie facts here:</h1>
+
+<button (click) = showFacts()>Show Movie Trivia</button>
+<button (click) = redFacts()>Turn the second fact red</button>
+
+<ol class="noFacts">
+    <li>I like La La Land</li>
+    <li>It's kind of sad, too.</li>
+</ol>
+
+<!-- Form for Movie Facts -->
+
+<form [formGroup] = "factCreator" (ngSubmit) = onSubmit()>
+    <label>Author</label>
+    <input type="text" formControlName="authorName">
+    <label>Film Fact</label>
+    <input type="text" formControlName="filmFact">
+    <button type="submit">Submit Fact</button>
+</form>
