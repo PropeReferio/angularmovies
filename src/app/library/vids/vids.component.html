@@ -1,0 +1,9 @@
+<p>vids works!</p>
+
+<button (click) = showLibrary()>Click to show Library Data</button>
+
+<div *ngFor="let library of libraries">
+    <h3>{{ library.userId }}</h3>
+    <h3>{{ library.id }}</h3>
+    <h3>{{ library.title }}</h3>
+</div>
