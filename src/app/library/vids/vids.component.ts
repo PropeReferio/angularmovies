@@ -8,11 +8,11 @@ import { LibraryService } from '../../services/library.service'
 })
 export class VidsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private libraryServe: LibraryService) { }
 
   showLibrary(){
     this.libraryServe.getLibrary().subscribe(data => {
-      this.showLibrary.data
+      this.library.data
     })
   }
 
